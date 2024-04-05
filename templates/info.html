@@ -10,11 +10,13 @@
         <thead>
             <th>Horário</th>
             <th>Ação</th>
+            <th>Body</th>
         </thead>
         {% for log in logs %}
         <tr>
             <td>{{log.data}}</td>
-            <td>{{log.mensagem}}</td>
+            <td>{{log.request}}</td>
+            <td>{{log.body}}</td>
         </tr>
         {% endfor %}
     </table>

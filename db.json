@@ -1,1 +1,1 @@
-{"_default": {"1": {"data": "2024-04-05 15:05:37.792832", "mensagem": "echo"}, "2": {"data": "2024-04-05 15:08:41.931323", "mensagem": "ping"}, "3": {"data": "2024-04-05 15:09:13.524434", "mensagem": "ping"}}}
+{"_default": {"1": {"data": "2024-04-05 15:26:03.672038", "request": "echo", "body": {"dados": "texto"}}, "2": {"data": "2024-04-05 15:26:17.614429", "request": "echo", "body": {"dados": "tmj murilo <3"}}, "3": {"data": "2024-04-05 15:26:25.328309", "request": "ping", "body": ""}, "4": {"data": "2024-04-05 15:26:25.855159", "request": "ping", "body": ""}}}

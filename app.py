@@ -15,13 +15,12 @@ def index():
 
 @app.route('/ping')
 def ping():
-    db.insert({'data': str(datetime.now()), 'mensagem': 'ping'})
+    db.insert({'data': str(datetime.now()), 'request': 'ping', 'body': ''})
     return jsonify({"resposta":"pong"})
-
 
 @app.route('/echo', methods=['POST'])
 def echo():
-    db.insert({'data': str(datetime.now()), 'mensagem': 'echo'})
+    db.insert({'data': str(datetime.now()), 'request': 'echo', 'body': request.json})
     text = request.json
     text = text['dados']
     return jsonify({"resposta":text})
