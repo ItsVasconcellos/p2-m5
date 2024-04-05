@@ -9,7 +9,7 @@ Para rodar a aplicação, siga os passos abaixo:
 3. Crie um ambiente virtual para isolar as dependências do projeto. Execute os seguintes comandos no diretório raiz do projeto:
 
     ```bash
-    cd Flask-Htmx/
+    cd p2-m5/
     python -m venv venv
     ```
 
@@ -41,7 +41,7 @@ Para rodar a aplicação, siga os passos abaixo:
 
 ## Estrutura de pastas
 ```bash
-projeto-pcb/
+p2-m5/
 ├── templates/
 │   ├── dash.html    
 │   └── info.html      
