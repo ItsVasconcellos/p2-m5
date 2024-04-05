@@ -1,5 +1,5 @@
 # Módulos necessários para o funcionamento do código
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, jsonify
 from flask_cors import CORS
 from tinydb import TinyDB
 from datetime import datetime 
@@ -14,11 +14,26 @@ def index():
 
 
 @app.route('/ping')
-def index():
+def ping():
+    db.insert({'data': str(datetime.now()), 'mensagem': 'ping'})
     return jsonify({"resposta":"pong"})
 
 
-@app.route('/ping', methods=['POST'])
-def index():
-    text = request.form['dados']
+@app.route('/echo', methods=['POST'])
+def echo():
+    db.insert({'data': str(datetime.now()), 'mensagem': 'echo'})
+    text = request.json
+    text = text['dados']
     return jsonify({"resposta":text})
+
+@app.route('/dash')
+def dash():
+    return render_template('dash.html')
+
+@app.route('/info')
+def info():
+    data = db.all()
+    return render_template('info.html', logs = data)
+
+if __name__ == '__main__':
+    app.run(debug=False, host='0.0.0.0', port=8000)

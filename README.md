@@ -39,3 +39,15 @@ Para rodar a aplicação, siga os passos abaixo:
 
 7. Acesse a aplicação no seu navegador através do seguinte endereço: `http://localhost:5000`.
 
+## Estrutura de pastas
+```bash
+projeto-pcb/
+├── templates/
+│   ├── dash.html    
+│   └── info.html      
+├── .gitignore
+├── app.py
+├── db.json
+├── LICENSE
+└── readme.md
+```
