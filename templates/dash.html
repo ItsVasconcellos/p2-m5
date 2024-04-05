@@ -11,7 +11,7 @@
     <title>Testando o HTMX</title>
 </head>
 <body class="container is-widescreen is-justify-content-center mt-6">
-    <button class="button is-primary" hx-get="/info" hx-target="#result">Carregar</button>
+    <button class="button is-primary" hx-trigger="click, load" hx-get="/info" hx-target="#result">Carregar</button>
     <div id="result"></div>
 </body>
 </html>

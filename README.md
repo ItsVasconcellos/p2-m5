@@ -51,3 +51,28 @@ projeto-pcb/
 ├── LICENSE
 └── readme.md
 ```
+
+## Rotas Disponíveis
+
+```python
+[Get]/Pong
+```
+Retorna Pong em formato JSON
+
+
+```python
+[Post]/Echo
+```
+Retorna em formato JSON, o que o usuário enviou no JSON na chave "Dados"
+
+
+```python
+[Get]/dash
+```
+Acessa o template html com o botão que traz as rotas
+
+```python
+[Get]/info
+```
+Acessa o template html com uma tabela, contendo todas as informações do banco.
+
