@@ -55,13 +55,13 @@ p2-m5/
 ## Rotas Disponíveis
 
 ```python
-[Get]/Pong
+[Get]/pong
 ```
 Retorna Pong em formato JSON
 
 
 ```python
-[Post]/Echo
+[Post]/echo
 ```
 Retorna em formato JSON, o que o usuário enviou no JSON na chave "Dados"
 
